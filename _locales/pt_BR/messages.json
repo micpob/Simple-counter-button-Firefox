@@ -1,0 +1,101 @@
+{
+  "extension_name": {
+    "message": "Botão contador"
+  },
+  "extension_description": {
+    "message": "Um contador controlado por um botão na sua barra de Chrome"
+  },
+  "context_menu_reset_counter": {
+    "message": "Reiniciar contador"
+  },
+  "context_menu_last_click_timestamp": {
+    "message": "Último clique: "
+  },
+  "notification_title": {
+    "message": "Limite atingido!"
+  },
+  "notification_message": {
+    "message": "Você atingiu o limite estabelecido de "
+  },
+  "options_page_title": {
+    "message": "Opções botão contador:"
+  },
+  "notification_option": {
+    "message": "Notificação ao chegar a: "
+  },
+  "step_option": {
+    "message": "Incremento contador: "
+  },
+  "new_total_option": {
+    "message": "Mudar o total para: "
+  },
+  "new_total_button": {
+    "message": "Mudar"
+  },
+  "sound_option": {
+    "message": "Son: "
+  },
+  "timestamp_option": {
+    "message": "Mostrar data e hora do último clique: "
+  },
+  "chronology_button": {
+    "message": "Ver cronologia"
+  },
+  "reset_button": {
+    "message": "Reiniciar contador"
+  },
+  "reset_message": {
+    "message": "Você também pode reiniciar clicando com o botão direito do mouse no botão do contador e selecionando 'Reiniciar contador'."
+  },
+  "close_page_button": {
+    "message": "Fechar esta página"
+  },
+  "chronology_page_title": {
+    "message": "Cronologia dos cliques"
+  },
+  "chronology_page_oldest_to_newest": {
+    "message": "Do mais antigo para o mais novo"
+  },
+  "chronology_page_newest_to_oldest": {
+    "message": "Do mais novo ao mais antigo"
+  },
+  "date": {
+    "message": "Data"
+  },
+  "time": {
+    "message": "Hora"
+  },
+  "interval": {
+    "message": "Tempo desde o clique anterior"
+  },
+  "days": {
+    "message": "d"
+  },
+  "hours": {
+    "message": "h"
+  },
+  "minutes": {
+    "message": "m"
+  },
+  "seconds": {
+    "message": "s"
+  },
+  "milliseconds": {
+    "message": "ms"
+  },
+  "context_menu_set_keyboard_shortcut": {
+    "message": "Definir atalho de teclado"
+  },
+  "context_menu_toggle_sound_on_shortcut": {
+    "message": "Ligar o som"
+  },
+  "context_menu_toggle_sound_off_shortcut": {
+    "message": "Desligar o som"
+  },
+  "export_chronology_table_to_csv_file_button_title": {
+    "message": "Exportar tabela para arquivo csv"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ Minhas outras extensões ★★"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "extension_name": {
+    "message": "Bottone contatore"
+  },
+  "extension_description": {
+    "message": "Aggiunge un contatore a bottone alla Toolbar di Chrome"
+  },
+  "context_menu_reset_counter": {
+    "message": "Azzerare contatore"
+  },
+  "context_menu_last_click_timestamp": {
+    "message": "Ultimo click: "
+  },
+  "notification_title": {
+    "message": "Limite raggiunto!"
+  },
+  "notification_message": {
+    "message": "Hai raggiunto il limite di "
+  },
+  "options_page_title": {
+    "message": "Opzioni Bottone Contatore:"
+  },
+  "notification_option": {
+    "message": "Notifica al conteggio di: "
+  },
+  "step_option": {
+    "message": "Avanzamento contatore: "
+  },
+  "new_total_option": {
+    "message": "Cambia totale a: "
+  },
+  "new_total_button": {
+    "message": "Cambia"
+  },
+  "sound_option": {
+    "message": "Suono: "
+  },
+  "timestamp_option": {
+    "message": "Mostra data e ora dell'ultimo click: "
+  },
+  "chronology_button": {
+    "message": "Cronologia click"
+  },
+  "reset_button": {
+    "message": "Azzera contatore"
+  },
+  "reset_message": {
+    "message": "Puoi azzerare anche cliccando con il tasto destro del mouse sul bottone contatore e selezionando 'Azzerare contatore'."
+  },
+  "close_page_button": {
+    "message": "Chiudi questa pagina"
+  },
+  "chronology_page_title": {
+    "message": "Cronologia dei click"
+  },
+  "chronology_page_oldest_to_newest": {
+    "message": "Dal più vecchio al più recente"
+  },
+  "chronology_page_newest_to_oldest": {
+    "message": "Dal più recente al più vecchio"
+  },
+  "date": {
+    "message": "Data"
+  },
+  "time": {
+    "message": "Ora"
+  },
+  "interval": {
+    "message": "Tempo dal click precedente"
+  },
+  "days": {
+    "message": "g"
+  },
+  "hours": {
+    "message": "h"
+  },
+  "minutes": {
+    "message": "m"
+  },
+  "seconds": {
+    "message": "s"
+  },
+  "milliseconds": {
+    "message": "ms"
+  },
+  "context_menu_set_keyboard_shortcut": {
+    "message": "Imposta scorciatoia da tastiera"
+  },
+  "context_menu_toggle_sound_on_shortcut": {
+    "message": "Attivare suono"
+  },
+  "context_menu_toggle_sound_off_shortcut": {
+    "message": "Disattivare suono"
+  },
+  "export_chronology_table_to_csv_file_button_title": {
+    "message": "Esporta la tabella in un file csv"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ Altre estensioni mie ★★"
+  }
+}

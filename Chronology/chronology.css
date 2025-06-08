@@ -1,0 +1,77 @@
+main {
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+#refresh_button {
+  margin: 15px 0 5px 0;
+  background: darkgreen;
+}
+
+#refresh_button:hover {
+  background: green;
+}
+
+#chronology_page_title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+table {
+  border-collapse: collapse;
+  /* border:1px solid white; */
+  font-size: large;
+  /* padding: 1em; */
+}
+
+thead {
+  border-bottom: 1px solid white;
+}
+
+tbody {
+  /* border: 1px solid white; */
+}
+
+th, td {
+  padding: 0.6em;
+}
+
+td {
+  text-align: center;
+}
+
+.rank-cell {
+  border-right: 1px solid white;
+}
+
+.interval-cell {
+  text-align: right;
+}
+
+.table-body-row {
+  border-bottom: 1px solid white;
+}
+
+select {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(255, 127, 39);
+  font-weight: 600;
+  width: 100%;
+  max-width: 300px;
+  font-size: large;
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+#export_button {
+  background-color: green;
+  font-size: smaller;
+  font-weight: 500;
+  padding: 10px 8px;
+}

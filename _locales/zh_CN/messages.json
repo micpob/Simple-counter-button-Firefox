@@ -1,0 +1,101 @@
+{
+  "extension_name": {
+    "message": "计数器按钮"
+  },
+  "extension_description": {
+    "message": "点击按钮来计算"
+  },
+  "context_menu_reset_counter": {
+    "message": "复位"
+  },
+  "context_menu_last_click_timestamp": {
+    "message": "最后一次点击。"
+  },
+  "notification_title": {
+    "message": "已达到极限!"
+  },
+  "notification_message": {
+    "message": "你已经达到了极限。"
+  },
+  "options_page_title": {
+    "message": "设置"
+  },
+  "notification_option": {
+    "message": "当我到达时，会有通知。"
+  },
+  "step_option": {
+    "message": "柜台台阶由。"
+  },
+  "new_total_option": {
+    "message": "新的总数。"
+  },
+  "new_total_button": {
+    "message": "好的"
+  },
+  "sound_option": {
+    "message": "声音。 "
+  },
+  "timestamp_option": {
+    "message": "显示最后一次点击的时间戳。"
+  },
+  "chronology_button": {
+    "message": "见年表"
+  },
+  "reset_button": {
+    "message": "复位"
+  },
+  "reset_message": {
+    "message": "你也可以通过右键点击按钮并选择 '重置 '来重置。"
+  },
+  "close_page_button": {
+    "message": "关闭此页面"
+  },
+  "chronology_page_title": {
+    "message": "点击率年表"
+  },
+  "chronology_page_oldest_to_newest": {
+    "message": "最早的到最新的"
+  },
+  "chronology_page_newest_to_oldest": {
+    "message": "最新的到最旧的"
+  },
+  "date": {
+    "message": "日期"
+  },
+  "time": {
+    "message": "一小时"
+  },
+  "interval": {
+    "message": "上次点击后的时间"
+  },
+  "days": {
+    "message": "天"
+  },
+  "hours": {
+    "message": "小时"
+  },
+  "minutes": {
+    "message": "分钟"
+  },
+  "seconds": {
+    "message": "秒"
+  },
+  "milliseconds": {
+    "message": "毫秒"
+  },
+  "context_menu_set_keyboard_shortcut": {
+    "message": "设置键盘快捷键"
+  },
+  "context_menu_toggle_sound_on_shortcut": {
+    "message": "打开声音"
+  },
+  "context_menu_toggle_sound_off_shortcut": {
+    "message": "关闭声音"
+  },
+  "export_chronology_table_to_csv_file_button_title": {
+    "message": "将表格导出为 csv 文件"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ 我的其他 Chrome 扩展程序 ★★"
+  }
+}

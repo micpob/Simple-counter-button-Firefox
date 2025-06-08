@@ -1,0 +1,7 @@
+*.docx
+*.psd
+*.zip
+Description*
+Deposit/
+old/
+.txt

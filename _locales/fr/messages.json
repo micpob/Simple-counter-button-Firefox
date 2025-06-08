@@ -1,0 +1,101 @@
+{
+  "extension_name": {
+    "message": "Bouton Compteur"
+  },
+  "extension_description": {
+    "message": "Ajoute un compteur contrôlé par un bouton à votre barre d'outils Chrome"
+  },
+  "context_menu_reset_counter": {
+    "message": "Réinitialiser le compteur"
+  },
+  "context_menu_last_click_timestamp": {
+    "message": "Dernier clic: "
+  },
+  "notification_title": {
+    "message": "Limite atteinte!"
+  },
+  "notification_message": {
+    "message": "Vous avez atteint la limite de "
+  },
+  "options_page_title": {
+    "message": "Options de Bouton Compteur:"
+  },
+  "notification_option": {
+    "message": "Avertissez-moi lorsque j'arrive à: "
+  },
+  "step_option": {
+    "message": "Contre- avancement: "
+  },
+  "new_total_option": {
+    "message": "Établir un nouveau total: "
+  },
+  "new_total_button": {
+    "message": "Établir"
+  },
+  "sound_option": {
+    "message": "Sonne: "
+  },
+  "timestamp_option": {
+    "message": "Afficher l'horodatage du dernier clic: "
+  },
+  "chronology_button": {
+    "message": "Voir chronologie"
+  },
+  "reset_button": {
+    "message": "Réinitialiser le compteur"
+  },
+  "reset_message": {
+    "message": "Vous pouvez également réinitialiser en cliquant avec le bouton droit sur le bouton compteur et en sélectionnant 'Réinitialiser le compteur'."
+  },
+  "close_page_button": {
+    "message": "Fermer cette page"
+  },
+  "chronology_page_title": {
+    "message": "Chronologie des clics"
+  },
+  "chronology_page_oldest_to_newest": {
+    "message": "Du plus ancien au plus récent"
+  },
+  "chronology_page_newest_to_oldest": {
+    "message": "Du plus récent au plus ancien"
+  },
+  "date": {
+    "message": "Date"
+  },
+  "time": {
+    "message": "Heure"
+  },
+  "interval": {
+    "message": "Temps depuis le clic précédent"
+  },
+  "days": {
+    "message": "j"
+  },
+  "hours": {
+    "message": "h"
+  },
+  "minutes": {
+    "message": "m"
+  },
+  "seconds": {
+    "message": "s"
+  },
+  "milliseconds": {
+    "message": "ms"
+  },
+  "context_menu_set_keyboard_shortcut": {
+    "message": "Définir raccourci clavier"
+  },
+  "context_menu_toggle_sound_on_shortcut": {
+    "message": "Activer le son"
+  },
+  "context_menu_toggle_sound_off_shortcut": {
+    "message": "Désactiver le son"
+  },
+  "export_chronology_table_to_csv_file_button_title": {
+    "message": "Exporter le tableau vers un fichier csv"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ Mes autres extensions ★★"
+  }
+}

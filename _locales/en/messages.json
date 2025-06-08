@@ -1,0 +1,101 @@
+{
+  "extension_name": {
+    "message": "Simple Counter Button"
+  },
+  "extension_description": {
+    "message": "Adds a counter controlled by a button to your Chrome Toolbar"
+  },
+  "context_menu_reset_counter": {
+    "message": "Reset counter"
+  },
+  "context_menu_last_click_timestamp": {
+    "message": "Last click: "
+  },
+  "notification_title": {
+    "message": "Limit reached!"
+  },
+  "notification_message": {
+    "message": "You have reached the set limit of "
+  },
+  "options_page_title": {
+    "message": "Simple Counter Button options:"
+  },
+  "notification_option": {
+    "message": "Notify me when I reach: "
+  },
+  "step_option": {
+    "message": "Counter steps by: "
+  },
+  "new_total_option": {
+    "message": "Set new total: "
+  },
+  "new_total_button": {
+    "message": "Set"
+  },
+  "sound_option": {
+    "message": "Sound: "
+  },
+  "timestamp_option": {
+    "message": "Show last click timestamp: "
+  },
+  "chronology_button": {
+    "message": "See chronology"
+  },
+  "reset_button": {
+    "message": "Reset counter"
+  },
+  "reset_message": {
+    "message": "You can also reset by right clicking the counter button and selecting 'Reset counter'."
+  },
+  "close_page_button": {
+    "message": "Close this page"
+  },
+  "chronology_page_title": {
+    "message": "Clicks Chronology"
+  },
+  "chronology_page_oldest_to_newest": {
+    "message": "Oldest to newest"
+  },
+  "chronology_page_newest_to_oldest": {
+    "message": "Newest to oldest"
+  },
+  "date": {
+    "message": "Date"
+  },
+  "time": {
+    "message": "Time"
+  },
+  "interval": {
+    "message": "Time since previous click"
+  },
+  "days": {
+    "message": "d"
+  },
+  "hours": {
+    "message": "h"
+  },
+  "minutes": {
+    "message": "m"
+  },
+  "seconds": {
+    "message": "s"
+  },
+  "milliseconds": {
+    "message": "ms"
+  },
+  "context_menu_set_keyboard_shortcut": {
+    "message": "Set keyboard shortcut"
+  },
+  "context_menu_toggle_sound_on_shortcut": {
+    "message": "Turn sound on"
+  },
+  "context_menu_toggle_sound_off_shortcut": {
+    "message": "Turn sound off"
+  },
+  "export_chronology_table_to_csv_file_button_title": {
+    "message": "Export table to csv file"
+  },
+  "context_menu_my_other_extensions": {
+    "message": "★★ My other extensions ★★"
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simple Counter Button options</title>
+  <link rel="shortcut icon" type="image/png" href="Res/Icons/icon32.png"/>
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+  <main>
+    <h1 data-text="options_page_title"></h1>
+    <h2 id="notification_setter" class="inactive">
+      <span data-text="notification_option"></span>
+      <input type="number" id="limit" size="6">
+      <label class="switch"> <input type="checkbox" id="limit_switch"> <span class="slider"></span> </label>
+      <span id="on_off_label">off</span>
+    </h2>
+    <h2>
+      <span data-text="step_option"></span>
+      <input type="number" id="step" size="6">
+    </h2>
+    <h2>
+      <span data-text="new_total_option"></span>
+      <input type="number" id="total" size="6">
+      <button data-text="new_total_button" id="set_new_total"></button> 
+    </h2>
+    <h2 id="sound_setter" class="inactive">
+      <div>
+        <span data-text="sound_option"></span>
+        <label class="switch"> <input type="checkbox" id="sound_switch"> <span class="slider"></span> </label>
+        <span id="on_off_label_sound">off</span>
+      </div>
+      <div id="sound_volume_container">
+        <span id="sound_volume_label">&#128226;</span> 
+        <input id="sound_volume_slider" type="range" min="0" max="1" step="0.1" title="Sound volume"> 
+      </div>
+    </h2>
+    <h2 id="timestamp_setter" class="inactive">
+      <div>
+        <span data-text="timestamp_option"></span>
+        <label class="switch"> <input type="checkbox" id="timestamp_switch"> <span class="slider"></span> </label>
+        <span id="on_off_label_timestamp">off</span>
+      </div>
+    </h2>
+    <button data-text="chronology_button" id="chronology_button"></button> 
+    <button data-text="reset_button" id="reset"></button>
+    <div id="reset_message" data-text="reset_message"></div>
+    <br>
+    <button data-text="context_menu_set_keyboard_shortcut" id="set_keyboard_shortcut_button"></button>
+    <button data-text="close_page_button" id="close"></button> 
+  </main>  
+</body>
+<script src="options.js"></script>
+</html>
