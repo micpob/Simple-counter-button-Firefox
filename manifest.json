@@ -14,9 +14,9 @@
     "128": "Res/Icons/icon128.png"
   },
   "background": {
-    "service_worker": "bg-wrapper.js"
+    "scripts": ["background.js"]
   },
-  "permissions": ["storage", "contextMenus", "offscreen"],
+  "permissions": ["storage", "contextMenus"],
   "optional_permissions": ["notifications", "downloads"],
   "options_page": "options.html",
   "action": {
@@ -27,6 +27,11 @@
       "48": "Res/Icons/icon48.png",
       "64": "Res/Icons/icon64.png",
       "128": "Res/Icons/icon128.png"    
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "simplecounterbutton@example.com"
     }
   }
 }
