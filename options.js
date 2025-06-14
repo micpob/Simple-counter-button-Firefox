@@ -25,33 +25,23 @@ chrome.storage.local.get('limit', (counter) => {
   limit.value = counter.limit
 })
 
-limitSwitch.addEventListener('change', (e) => {
+limitSwitch.addEventListener('change', async (e) => {
   if (e.target.checked) {
-    chrome.permissions.contains({
-      permissions: ['notifications']
-    }, (result) => {
-      if (result) {
-        //console.log('notifications permission already granted')
-        chrome.storage.local.set({'notification': true})    
-        notificationSetter.classList.remove('inactive')
-        onOffIndicator.innerHTML = 'on'
-      } else {
-        chrome.permissions.request({permissions: ['notifications']}, (granted) => {
-          if (granted) {
-            chrome.storage.local.set({'notification': true})    
+
+    const permissionGranted = await browser.permissions.request({permissions: ['notifications']})
+    if (permissionGranted) {
+            browser.storage.local.set({'notification': true})    
             notificationSetter.classList.remove('inactive')
             onOffIndicator.innerHTML = 'on'
           } else {
             e.target.checked = false
-            chrome.storage.local.set({'notification': false})    
+            browser.storage.local.set({'notification': false})    
             notificationSetter.classList.add('inactive')
             onOffIndicator.innerHTML = 'off'
           }
-        })
-      }
-    })
+
   } else {
-    chrome.storage.local.set({'notification': false})    
+    browser.storage.local.set({'notification': false})    
     notificationSetter.classList.add('inactive')
     onOffIndicator.innerHTML = 'off'
   }

@@ -300,7 +300,35 @@ chrome.storage.onChanged.addListener((changes) => {
 
     if (key === 'sound') {
       const newSoundValue = changes.sound.newValue
-      chrome.contextMenus.update('simpleCounterButtonToggleSoundShortcutContextMenu', {title: `${newSoundValue ? chrome.i18n.getMessage("context_menu_toggle_sound_off_shortcut") : chrome.i18n.getMessage("context_menu_toggle_sound_on_shortcut") }`}, () => chrome.runtime.lastError);
-    }
+const sendNotification = async (step, total, limit) => {
+  if (step > 0 && total >= limit || step < 0 && total <= limit) {
+    browser.notifications.getAll((items) => {
+      if (items && Object.keys(items).length > 0) {
+        //console.log('notification already opened:', items)
+      } else {
+        const options = {
+          type: 'basic',
+          iconUrl: 'Res/Icons/icon48.png',
+          title: browser.i18n.getMessage('notification_title'),
+          message: browser.i18n.getMessage('notification_message') + limit,
+          /* requireInteraction: true, */
+          priority: 2
+        }
+        browser.notifications.create('LimitReachedNotification', options, () => {
+          browser.notifications.onClicked.addListener(clearAllNotifications)
+          browser.notifications.onClosed.addListener(clearAllNotifications)
+        })
   }
 })
+  }
+}
+
+const clearAllNotifications = () => {
+  browser.notifications.getAll((items) => {
+    if (items) {
+      for (let key in items) {
+        browser.notifications.clear(key)
+      }
+    }
+  })
+}
