@@ -1,21 +1,11 @@
 const downloadCSVBtn = document.getElementById('export_button')
 
-downloadCSVBtn.addEventListener('click', (e) => {
-  chrome.permissions.contains({
-    permissions: ['downloads']
-  }, (result) => {
-    if (result) {
-      const dataFromTable =  getDataFromTable()
-      exportToCsv('Simple_Counter_Button_Chronology.csv', dataFromTable)
-    } else {
-      chrome.permissions.request({permissions: ['downloads']}, (granted) => {
-        if (granted) {
-          const dataFromTable =  getDataFromTable()
-          exportToCsv('Simple_Counter_Button_Chronology.csv', dataFromTable)
-        } 
-      })
-    }
-  })
+downloadCSVBtn.addEventListener('click', async (e) => {
+  const permissionGranted = await browser.permissions.request({permissions: ['downloads']})
+  if (permissionGranted) {
+    const dataFromTable =  getDataFromTable()
+    exportToCsv('Simple_Counter_Button_Chronology.csv', dataFromTable)
+  } 
 })
 
 const exportToCsv = (filename, rows) => {
@@ -44,7 +34,7 @@ const exportToCsv = (filename, rows) => {
   let blob = new Blob([csvFile], { type: 'text/csv;charset=utf-8;' });
 
   const url = URL.createObjectURL(blob);
-  chrome.downloads.download({
+  browser.downloads.download({
     url: url,
     filename: filename
   })
