@@ -173,10 +173,17 @@ const setUpContextMenus = () => {
       //toggle sound on/off
       const contextMenuToggleSoundShortcut = {
         "id": "simpleCounterButtonToggleSoundShortcutContextMenu",
-        "title": `${counter.sound ? chrome.i18n.getMessage("context_menu_toggle_sound_off_shortcut") : chrome.i18n.getMessage("context_menu_toggle_sound_on_shortcut") }`,
+        "title": `${counter.sound ? browser.i18n.getMessage("context_menu_toggle_sound_off_shortcut") : browser.i18n.getMessage("context_menu_toggle_sound_on_shortcut") }`,
         "contexts": ["action"]
       }
-      chrome.contextMenus.create(contextMenuToggleSoundShortcut, () => chrome.runtime.lastError)     
+      browser.contextMenus.create(contextMenuToggleSoundShortcut, () => browser.runtime.lastError)
+
+      const contextMenuOpenOptionsPage = {
+        "id": "simpleCounterButtonOpenOptionsPageContextMenu",
+        "title": browser.i18n.getMessage("context_menu_open_options_page"),
+        "contexts": ["action"]
+      }
+      browser.contextMenus.create(contextMenuOpenOptionsPage, () => browser.runtime.lastError)     
      
       //Link to other extensions
       /* const contextMenuMyOtherExtensions = {
@@ -268,6 +275,10 @@ chrome.contextMenus.onClicked.addListener((clickData) => {
         chrome.storage.local.set({'sound': true}) 
       }
     })
+  }
+
+  if (clickData.menuItemId == 'simpleCounterButtonOpenOptionsPageContextMenu') {
+    browser.runtime.openOptionsPage()
   }
 
   /* if (clickData.menuItemId == 'myOtherExtensions') {
