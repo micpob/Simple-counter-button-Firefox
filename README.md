@@ -1,6 +1,6 @@
 # Simple Counter Button
 
-This was the first Chrome extension I developed. I needed a counter that could be incremented by clicking on a **button on the browser’s toolbar**, but surprisingly I couldn’t find such an extension in the Chrome Web Store.
+This was the first extension I developed. I needed a counter that could be incremented by clicking on a **button on the browser’s toolbar**, but surprisingly I couldn’t find such an extension.
 
 <br/>
 <div align="center" >
@@ -36,4 +36,4 @@ HTML, CSS, Javascript (Extensions APIs)
   
 ### Install here: 
 
-<a href="https://chrome.google.com/webstore/detail/simple-counter-button/ganimlbiphepcnkneheoamhohhmjpohp"><img src="Docs/screenshots/chrome-web-store-logo-large.png" alt="Chrome web store button" width="250px" ></a>
+<a href=""><kbd><img src="Docs/Screenshots/firefox-logo.png" alt="Firefox web store button" width="250px" ></kbd></a>
