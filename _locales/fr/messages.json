@@ -3,7 +3,7 @@
     "message": "Bouton Compteur"
   },
   "extension_description": {
-    "message": "Ajoute un compteur contrôlé par un bouton à votre barre d'outils Chrome"
+    "message": "Ajoute un compteur contrôlé par un bouton à votre barre d'outils"
   },
   "context_menu_reset_counter": {
     "message": "Réinitialiser le compteur"
@@ -97,5 +97,8 @@
   },
   "context_menu_my_other_extensions": {
     "message": "★★ Mes autres extensions ★★"
+  },
+  "context_menu_open_options_page": {
+    "message": "Options"
   }
 }

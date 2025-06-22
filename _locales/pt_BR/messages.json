@@ -3,7 +3,7 @@
     "message": "Botão contador"
   },
   "extension_description": {
-    "message": "Um contador controlado por um botão na sua barra de Chrome"
+    "message": "Um contador controlado por um botão na sua barra de herramientas"
   },
   "context_menu_reset_counter": {
     "message": "Reiniciar contador"
@@ -97,5 +97,8 @@
   },
   "context_menu_my_other_extensions": {
     "message": "★★ Minhas outras extensões ★★"
+  },
+  "context_menu_open_options_page": {
+    "message": "Opções"
   }
 }

@@ -3,7 +3,7 @@ const objects = document.getElementsByTagName('*')
 for(let i = 0; i < objects.length; i++) {
   if (objects[i].hasAttribute('data-text')) {
     const textKey = objects[i].getAttribute('data-text')
-    objects[i].innerText = chrome.i18n.getMessage(textKey)
+    objects[i].innerText = browser.i18n.getMessage(textKey)
   }
 }  
 
@@ -13,7 +13,7 @@ const limit = document.getElementById('limit')
 const limitSwitch = document.getElementById('limit_switch')
 const onOffIndicator = document.getElementById('on_off_label')
 
-chrome.storage.local.get('notification', (counter) => {  
+browser.storage.local.get('notification', (counter) => {  
   if (counter.notification) {
     notificationSetter.classList.remove('inactive')
     limitSwitch.checked = true
@@ -21,7 +21,7 @@ chrome.storage.local.get('notification', (counter) => {
   }
 })
 
-chrome.storage.local.get('limit', (counter) => {
+browser.storage.local.get('limit', (counter) => {
   limit.value = counter.limit
 })
 
@@ -49,19 +49,19 @@ limitSwitch.addEventListener('change', async (e) => {
 
 limit.addEventListener('change', () => {
   const limitValue = Math.trunc(limit.value * 10) / 10
-  chrome.storage.local.set({'limit': limitValue})
+  browser.storage.local.set({'limit': limitValue})
   limit.value = limitValue
 })
 
 //Set counter step by
 const step = document.getElementById('step')
-chrome.storage.local.get('step', (counter) => {
+browser.storage.local.get('step', (counter) => {
   step.value = counter.step
 })
 
 step.addEventListener('change', (e) => {
   const stepValue = Math.trunc(step.value * 10) / 10
-  chrome.storage.local.set({'step': stepValue})  
+  browser.storage.local.set({'step': stepValue})  
   step.value = stepValue  
 })
 
@@ -69,8 +69,8 @@ step.addEventListener('change', (e) => {
 const counterTotal = document.getElementById('total')
 document.getElementById('set_new_total').addEventListener('click', (e) => {
   const totalValue = Math.trunc(counterTotal.value * 10) / 10
-  chrome.storage.local.set({'total': totalValue}, () => {
-    chrome.action.setBadgeText({'text': totalValue.toString()})
+  browser.storage.local.set({'total': totalValue}, () => {
+    browser.action.setBadgeText({'text': totalValue.toString()})
   })
   counterTotal.value = totalValue 
 })
@@ -82,7 +82,7 @@ const soundOnOffIndicator = document.getElementById('on_off_label_sound')
 const soundVolumeContainer = document.getElementById('sound_volume_container')
 const volumeSlider = document.getElementById('sound_volume_slider')
 
-chrome.storage.local.get(['sound', 'volume'], (counter) => {  
+browser.storage.local.get(['sound', 'volume'], (counter) => {  
   if (counter.sound) {
     soundSetter.classList.remove('inactive')
     soundSwitch.checked = true
@@ -94,12 +94,12 @@ chrome.storage.local.get(['sound', 'volume'], (counter) => {
 
 soundSwitch.addEventListener('change', (e) => {
   if (e.target.checked) {
-    chrome.storage.local.set({'sound': true})    
+    browser.storage.local.set({'sound': true})    
     soundSetter.classList.remove('inactive')
     soundOnOffIndicator.innerHTML = 'on'
     soundVolumeContainer.style.visibility = 'visible'
   } else {
-    chrome.storage.local.set({'sound': false})    
+    browser.storage.local.set({'sound': false})    
     soundSetter.classList.add('inactive')
     soundOnOffIndicator.innerHTML = 'off'
     soundVolumeContainer.style.visibility = 'hidden'
@@ -108,7 +108,7 @@ soundSwitch.addEventListener('change', (e) => {
 
 volumeSlider.addEventListener('input', (e) => {
   const newVolume = parseFloat(volumeSlider.value)
-  chrome.storage.local.set({'volume': newVolume})
+  browser.storage.local.set({'volume': newVolume})
 })
 
 //Timestamp
@@ -116,7 +116,7 @@ const timeStampSetter = document.getElementById('timestamp_setter')
 const timeStampSwitch = document.getElementById('timestamp_switch')
 const timeStampOffIndicator = document.getElementById('on_off_label_timestamp')
 
-chrome.storage.local.get(['showTimestamp'], (counter) => {  
+browser.storage.local.get(['showTimestamp'], (counter) => {  
   if (counter.showTimestamp) {
     timeStampSetter.classList.remove('inactive')
     timeStampSwitch.checked = true
@@ -126,29 +126,29 @@ chrome.storage.local.get(['showTimestamp'], (counter) => {
 
 timeStampSwitch.addEventListener('change', (e) => {
   if (e.target.checked) {
-    chrome.storage.local.set({'showTimestamp': true})    
+    browser.storage.local.set({'showTimestamp': true})    
     timeStampSetter.classList.remove('inactive')
     timeStampOffIndicator.innerHTML = 'on'
   } else {
-    chrome.storage.local.set({'showTimestamp': false})    
+    browser.storage.local.set({'showTimestamp': false})    
     timeStampSetter.classList.add('inactive')
     timeStampOffIndicator.innerHTML = 'off'
   }
 })
 
 //Open clicks chronology button
-document.getElementById('chronology_button').addEventListener('click', () => { chrome.tabs.create({ url: chrome.runtime.getURL('Chronology/chronology.html') }) })
+document.getElementById('chronology_button').addEventListener('click', () => { browser.tabs.create({ url: browser.runtime.getURL('Chronology/chronology.html') }) })
 
 //Reset button
 document.getElementById('reset').addEventListener('click', () => {
-  chrome.storage.local.set({'total': 0}, () => {
-    chrome.action.setBadgeText({'text': '0'})
-    chrome.permissions.contains({permissions: ['notifications']}, (result) => {
+  browser.storage.local.set({'total': 0}, () => {
+    browser.action.setBadgeText({'text': '0'})
+    browser.permissions.contains({permissions: ['notifications']}, (result) => {
       if (result) {
-        chrome.notifications.getAll((items) => {
+        browser.notifications.getAll((items) => {
           if (items) {
             for (let key in items) {
-              chrome.notifications.clear(key)
+              browser.notifications.clear(key)
             }
           }
         })
@@ -158,7 +158,7 @@ document.getElementById('reset').addEventListener('click', () => {
 })
 
 //Set keyboard shortcut button
-document.getElementById('set_keyboard_shortcut_button').addEventListener('click', () => { chrome.tabs.create({ url: 'chrome://extensions/shortcuts' }) })
+//document.getElementById('set_keyboard_shortcut_button').addEventListener('click', () => { browser.tabs.create({ url: 'browser://extensions/shortcuts' }) })
 
 //Close page button
 document.getElementById('close').addEventListener('click', () => { window.close() })

@@ -96,6 +96,9 @@
     "message": "将表格导出为 csv 文件"
   },
   "context_menu_my_other_extensions": {
-    "message": "★★ 我的其他 Chrome 扩展程序 ★★"
+    "message": "★★ 我的其他 扩展程序 ★★"
+  },
+  "context_menu_open_options_page": {
+    "message": "选项"
   }
 }

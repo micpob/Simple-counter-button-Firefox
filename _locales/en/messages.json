@@ -3,7 +3,7 @@
     "message": "Simple Counter Button"
   },
   "extension_description": {
-    "message": "Adds a counter controlled by a button to your Chrome Toolbar"
+    "message": "Adds a counter controlled by a button to your Toolbar"
   },
   "context_menu_reset_counter": {
     "message": "Reset counter"
@@ -97,5 +97,8 @@
   },
   "context_menu_my_other_extensions": {
     "message": "★★ My other extensions ★★"
+  },
+  "context_menu_open_options_page": {
+    "message": "Options"
   }
 }

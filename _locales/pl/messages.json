@@ -3,7 +3,7 @@
     "message": "Przycisk prostego licznika"
   },
   "extension_description": {
-    "message": "Dodaje licznik kontrolowany przez przycisk do paska narzędzi Chrome."
+    "message": "Dodaje licznik kontrolowany przez przycisk do paska narzędzi."
   },
   "context_menu_reset_counter": {
     "message": "Reset licznika"
@@ -97,5 +97,8 @@
   },
   "context_menu_my_other_extensions": {
     "message": "★★ Moje inne rozszerzenia ★★"
+  },
+  "context_menu_open_options_page": {
+    "message": "Opcje"
   }
 }

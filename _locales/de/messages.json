@@ -3,7 +3,7 @@
     "message": "Einfache Zähler-Taste"
   },
   "extension_description": {
-    "message": "Fügt Ihrer Chrome-Symbolleiste einen Zähler hinzu, der über eine Schaltfläche gesteuert wird"
+    "message": "Fügt Ihrer Symbolleiste einen Zähler hinzu, der über eine Schaltfläche gesteuert wird"
   },
   "context_menu_reset_counter": {
     "message": "Zähler zurücksetzen"
@@ -97,5 +97,8 @@
   },
   "context_menu_my_other_extensions": {
     "message": "★★ Meine anderen Erweiterungen ★★"
+  },
+  "context_menu_open_options_page": {
+    "message": "Optionen"
   }
 }
