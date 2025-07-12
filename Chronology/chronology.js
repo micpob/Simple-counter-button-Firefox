@@ -64,6 +64,9 @@ const setDataInTable = () => {
       const chronologyArray = counter.chronology.slice(-200)
       if(order === 'newest') chronologyArray.reverse()
       chronologyArray.map((click, index, array) => { 
+        if (index === chronologyArray.length - 1) {
+          document.getElementById('reset_chronology_button_container').style.visibility = 'visible'
+        }
         if (Number.isInteger(click)) {
           const previousClick = order === 'oldest' ? array[index-1] : array[index+1]
           const timestamp = new Date(click)
@@ -122,6 +125,15 @@ document.getElementById('clicks_display_order').addEventListener('change', (e) =
   const newOrder = e.target.value
   //console.log(newOrder)
   browser.storage.local.set({'chronologyOrder': newOrder}, () => { setDataInTable() })
+})
+
+document.getElementById('reset_chronology_button').addEventListener('click', () => { 
+  chrome.storage.local.set({
+    "chronology": []
+  }, () => {
+    document.getElementById('reset_chronology_button_container').style.visibility = 'hidden'
+    setDataInTable()
+  }) 
 })
 
 setDataInTable()

@@ -98,7 +98,7 @@
   "context_menu_my_other_extensions": {
     "message": "★★ Moje inne rozszerzenia ★★"
   },
-  "context_menu_open_options_page": {
-    "message": "Opcje"
+  "reset_chronology_button": {
+    "message": "Zresetuj chronologię"
   }
 }

@@ -98,7 +98,7 @@
   "context_menu_my_other_extensions": {
     "message": "★★ 我的其他 扩展程序 ★★"
   },
-  "context_menu_open_options_page": {
-    "message": "选项"
+  "reset_chronology_button": {
+    "message": "重置时间顺序"
   }
 }
