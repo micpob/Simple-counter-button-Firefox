@@ -2,9 +2,6 @@
   font-family: sans-serif;
 }
 
-main {
-}
-
 h1 {
   margin-bottom: 15px;
 }
@@ -25,17 +22,11 @@ h1 {
 
 table {
   border-collapse: collapse;
-  /* border:1px solid white; */
   font-size: large;
-  /* padding: 1em; */
 }
 
 thead {
   border-bottom: 1px solid white;
-}
-
-tbody {
-  /* border: 1px solid white; */
 }
 
 th, td {
