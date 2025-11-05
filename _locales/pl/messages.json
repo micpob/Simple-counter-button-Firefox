@@ -103,5 +103,8 @@
   },
   "access_chronology_message": {
     "message": "Historię można również wyświetlić, klikając prawym przyciskiem myszy licznik, a następnie pole ostatniego kliknięcia."
+  },
+  "context_menu_open_options_page": {
+    "message": "Opcje"
   }
 }

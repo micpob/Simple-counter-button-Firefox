@@ -103,5 +103,8 @@
   },
   "access_chronology_message": {
     "message": "Vous pouvez également consulter la chronologie en cliquant avec le bouton droit de la souris sur le compteur et en cliquant sur le dernier clic."
+  },
+  "context_menu_open_options_page": {
+    "message": "Options"
   }
 }

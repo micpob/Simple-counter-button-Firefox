@@ -103,5 +103,8 @@
   },
   "access_chronology_message": {
     "message": "Sie können die Chronologie auch einsehen, indem Sie mit der rechten Maustaste auf die Zählertaste klicken und den Zeitstempel des letzten Klicks anklicken."
+  },
+  "context_menu_open_options_page": {
+    "message": "Optionen"
   }
 }

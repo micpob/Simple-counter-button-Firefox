@@ -103,5 +103,8 @@
   },
   "access_chronology_message": {
     "message": "您还可以右键点击计数器按钮，然后点击最后一次点击的时间戳，查看时间顺序。"
+  },
+  "context_menu_open_options_page": {
+    "message": "选项"
   }
 }

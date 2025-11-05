@@ -103,5 +103,8 @@
   },
   "access_chronology_message": {
     "message": "Puoi vedere la cronologia anche facendo click con il tasto destro del mouse sul contatore e poi sulla casella dell'ultimo click."
+  },
+  "context_menu_open_options_page": {
+    "message": "Opzioni"
   }
 }

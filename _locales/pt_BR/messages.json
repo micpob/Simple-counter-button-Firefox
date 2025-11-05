@@ -103,5 +103,8 @@
   },
   "access_chronology_message": {
     "message": "Você também pode ver o histórico clicando com o botão direito do mouse no contador e, em seguida, na caixa do último clique."
+  },
+  "context_menu_open_options_page": {
+    "message": "Opções"
   }
 }
