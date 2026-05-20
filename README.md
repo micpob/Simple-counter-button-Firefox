@@ -8,9 +8,9 @@ This was the first extension I developed. I needed a counter that could be incre
 </div>
 <br/>
 
-The counter can be set to step by any value, positive or negative. Default step is +1 per click.
+The counter can be set to step by any value, positive or negative. Default step is +1 per click. Click the button with the mouse wheel (middle click) in order to do a -1 step.
 
-The counter also has a **notification functionality**: it is possible to set a limit and receive a notification when that limit is reached.
+The counter also has a **notification functionality**: It is possible to set a limit and receive a notification when that limit is reached.
 
 <br/>
 <div align="center" >
@@ -28,12 +28,8 @@ Right click on the button and select “Options” to access the options page.
   
 &nbsp;  
 
-### Stack used:
-
-HTML, CSS, Javascript (Extensions APIs)
+**Made with:** HTML, CSS, Javascript (Extensions APIs)
 
 &nbsp;
-  
-### Install here: 
 
 <a href=""><kbd><img src="Docs/Screenshots/firefox-logo.png" alt="Firefox web store button" width="250px" ></kbd></a>
