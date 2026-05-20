@@ -9,12 +9,13 @@ browser.runtime.onStartup.addListener( () => {
   })
 })
 
-browser.action.onClicked.addListener( () => {
+browser.action.onClicked.addListener( (tab, onClickData) => {
+
   const newTimestamp = Date.now()
 
   browser.storage.local.get(['total', 'step', 'limit', 'notification', 'sound', 'volume', 'chronology'], (counter) => {
     const step = counter.step
-    let newTotal = counter.total + step
+    let newTotal = onClickData.button == 1 ? counter.total - step : counter.total + step
     if (!Number.isInteger(newTotal)) {
       const digitsBeforePoint = Math.ceil(Math.log10(Math.floor(Math.abs(newTotal))+1))
       const toPrecisionIndex = digitsBeforePoint + 1
